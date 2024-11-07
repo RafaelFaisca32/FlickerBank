@@ -34,7 +34,7 @@
 
 .account {
     -fx-background-radius: 5;
-    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 0, 10);
+    -fx-effect: dropshadow(three-pass-box, #232b2b, 5, 0, 0, 7);
 }
 
 .account VBox {
@@ -142,7 +142,7 @@
 }
 
 .new_trans_container Button {
-    -fx-background-color: linear-gradient(to right, #d40606, #691b1b);
+    -fx-background-color: linear-gradient(to right, #691b1b, #d40606);
     -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
     -fx-pref-width: 230;
     -fx-font-size: 1.5em;

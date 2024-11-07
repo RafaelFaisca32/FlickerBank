@@ -1,17 +1,19 @@
 package com.bank.app;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
+import java.io.IOException;
+
 import javafx.stage.Stage;
+
+import com.bank.app.Models.Model;
 
 public class BankApplication extends javafx.application.Application {
 
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/bank/Fxml/login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.setTitle("Login");
-        stage.show();
+    public void start(Stage stage){
+        try {
+            Model.getInstance().getViewFactory().showLoginWindow();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

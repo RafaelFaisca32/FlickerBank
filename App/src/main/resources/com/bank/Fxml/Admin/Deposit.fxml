@@ -16,7 +16,7 @@
     <VBox layoutX="15.0" layoutY="137.0" prefHeight="570.0" prefWidth="820.0" AnchorPane.leftAnchor="15.0"
           AnchorPane.topAnchor="100.0">
         <HBox alignment="CENTER" prefHeight="60.0" prefWidth="820.0" styleClass="search_box">
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Payee Address:"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search By PayFlickr Address:"/>
             <TextField fx:id="pAddress_fld"/>
             <Button fx:id="search_btn" mnemonicParsing="false" text="Search">
                 <graphic>

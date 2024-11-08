@@ -13,19 +13,19 @@ public class TransactionCellFactory extends ListCell<Transaction> {
     @Override
     protected void updateItem(Transaction transaction, boolean bool) {
         super.updateItem(transaction, bool);
-        if(bool){
+        if (bool){
+            setText(null);
+            setGraphic(null);
+        } else {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/bank/Fxml/Client/TransactionCell.fxml"));
             TransactionCellController controller = new TransactionCellController(transaction);
             loader.setController(controller);
             setText(null);
             try {
                 setGraphic(loader.load());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e){
+                e.printStackTrace();
             }
-        } else {
-            setText(null);
-            setGraphic(null);
         }
     }
 }

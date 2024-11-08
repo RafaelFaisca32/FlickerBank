@@ -109,7 +109,7 @@
 .transaction_listview {
     -fx-background-color: #000000;
     -fx-border-width: 0 0 0 0;
-    -fx-border-color: #AAAAAA;
+    -fx-border-color: #000000;
 }
 
 .transaction_listview .scroll-bar:vertical {

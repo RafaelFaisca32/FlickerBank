@@ -1,6 +1,5 @@
 .cell_container {
     -fx-background-color: #000000;
-    -fx-background-radius: 10;
     -fx-effect: dropshadow(three-pass-box, #232b2b, 5, 0, 0, 7);
 }
 

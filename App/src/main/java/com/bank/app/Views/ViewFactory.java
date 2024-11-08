@@ -143,7 +143,7 @@ public class ViewFactory {
         pane.getChildren().add(hBox);
         Scene scene = new Scene(pane, 300, 100);
         Stage stage = new Stage();
-        stage.getIcons().add(new Image(String.valueOf(getClass().getResource("/Images/icon.png"))));
+        stage.getIcons().add(new Image(String.valueOf(getClass().getResource("/Images/Logo.png"))));
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Message");
